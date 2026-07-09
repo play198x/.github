@@ -1,10 +1,6 @@
 # Play198x — org container
 
-This folder is the local mirror of the **`play198x` GitHub org**. It is a
-*container*, not a git repo: each subfolder is its own independent repo with its
-own history and remote (the same pattern as `Code198x/`, `Asm198x/`, `Cat198x/`,
-`Forge198x/`, and `Build198x/`). The umbrella `198x/` repo gitignores this
-folder; commit inside the specific subfolder, never here.
+This folder is the org container for the **`play198x` GitHub organisation**. It is not a Git repo; each child folder is an independent repo with its own remote. Commit inside the repo that owns the file.
 
 Play198x is the 198x family's **retro media player/viewer** — it plays and
 previews vintage media (audio, images, animation) without booting a whole
