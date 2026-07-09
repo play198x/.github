@@ -11,15 +11,15 @@ previews vintage media (audio, images, animation) without booting a whole
 machine. See the umbrella context at [`../CLAUDE.md`](../CLAUDE.md) and the
 binding decision at [`../decisions/play198x-media-player.md`](../decisions/play198x-media-player.md).
 
-**Status: decided, not yet started.** No near-term pull; these repos hold the
-work, which waits for a concrete need (curriculum media previews, a Cat198x
-preview surface).
+**Status: not yet started.** No near-term pull; these repos hold design and future
+implementation space until a concrete need appears (curriculum media previews or
+a Cat198x preview surface).
 
 ## Repos in this org
 
 | Folder | GitHub repo | Role |
 |--------|-------------|------|
-| [`play198x/`](play198x/) | `play198x/play198x` | **Flagship.** The media player/viewer (placeholder for now). |
+| [`play198x/`](play198x/) | `play198x/play198x` | **Flagship.** Future media player/viewer repo. |
 | [`.github/`](.github/) | `play198x/.github` | Org profile (`profile/README.md`) and shared community-health files. |
 | [`docs/`](docs/) | `play198x/docs` | Design notes; user docs in time. |
 
