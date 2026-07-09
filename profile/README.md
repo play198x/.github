@@ -8,7 +8,7 @@ Audio (SID, AY/YM, tracker formats), images (IFF/ILBM, C64 koala/hires, Spectrum
 
 Play198x has no near-term pull. The repos currently hold design notes and future implementation space until a concrete need appears — curriculum media previews, or a preview surface for Cat198x's catalogue.
 
-A guiding rule: Play198x is a thin consumer of Emu198x's chip and CPU cores for the formats that need a player, and decodes pure-data formats directly. It never reimplements chip emulation.
+A guiding rule: Play198x is a thin consumer of Emu198x's chip and CPU cores for the formats that need a player, and decodes pure-data formats directly. It never reimplements chip emulation; the boundary is governed by the umbrella Play198x decision record.
 
 ## Repositories
 
@@ -17,4 +17,4 @@ A guiding rule: Play198x is a thin consumer of Emu198x's chip and CPU cores for 
 
 ## Part of the 198x family
 
-A sibling project to retro-computing curriculum, emulator, assembler, build-tools, and cataloguing work that share a hardware-reference layer.
+Play198x is the future media player/viewer sibling in the 198x family, sharing the same hardware-reference layer as the curriculum, emulator, assembler, build-tools, and catalogue projects.
