@@ -4,9 +4,11 @@ The retro media player/viewer for the 198x family — plays and previews vintage
 
 Audio (SID, AY/YM, tracker formats), images (IFF/ILBM, C64 koala/hires, Spectrum SCR), and animation (Amiga ANIM, FLI/FLC). The boundary with [Emu198x](https://github.com/emu198x): Emu198x *executes programs* (boots a machine); Play198x *renders media* — a different verb.
 
-## Status — not yet started
+## Status — started
 
-Play198x has no near-term pull. The repos currently hold design notes and future implementation space until a concrete need appears — curriculum media previews, or a preview surface for Cat198x's catalogue.
+The first sub-project is designed and approved: a **data-driven core** — viewing Spectrum SCR, C64 Koala and Art Studio, and Amiga ILBM, and playing ProTracker MOD, read straight out of plain files, ZIPs and Amiga disk images. Implementation has not begun.
+
+SID and AY come later. Those formats are machine code plus a register stream rather than data a player interprets, so they need the emulator's chip cores; the data-driven half needs nothing from Emu198x at all.
 
 A guiding rule: Play198x is a thin consumer of Emu198x's chip and CPU cores for the formats that need a player, and decodes pure-data formats directly. It never reimplements chip emulation; the boundary is governed by the umbrella Play198x decision record.
 

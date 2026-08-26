@@ -7,9 +7,11 @@ previews vintage media (audio, images, animation) without booting a whole
 machine. See the umbrella context at [`../CLAUDE.md`](../CLAUDE.md) and the
 binding decision at [`../decisions/play198x-media-player.md`](../decisions/play198x-media-player.md).
 
-**Status: not yet started.** No near-term pull; these repos hold design and future
-implementation space until a concrete need appears (curriculum media previews or
-a Cat198x preview surface).
+**Status: started.** The data-driven core (images + tracker music) is designed
+and approved in `docs/specs/`; implementation has not begun. Read those specs
+before proposing scope or architecture changes. SID/AY are deliberately out of
+the first slice — they need Emu198x's chip crates, which are `publish = false`
+(emu198x/emu198x#1214).
 
 ## Repos in this org
 
