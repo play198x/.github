@@ -19,7 +19,7 @@ the first slice — they need Emu198x's chip crates, which are `publish = false`
 
 | Folder | GitHub repo | Role |
 |--------|-------------|------|
-| [`play198x/`](play198x/) | `play198x/play198x` | **Flagship.** Future media player/viewer repo. |
+| [`play198x/`](play198x/) | `play198x/play198x` | **Flagship.** The media player/viewer workspace; holds `play198x-core`. |
 | [`.github/`](.github/) | `play198x/.github` | Org profile (`profile/README.md`) and shared community-health files. |
 | [`docs/`](docs/) | `play198x/docs` | Design notes; user docs in time. |
 
