@@ -22,6 +22,7 @@ the first slice — they need Emu198x's chip crates, which are `publish = false`
 | [`play198x/`](play198x/) | `play198x/play198x` | **Flagship.** The media player/viewer workspace; holds `play198x-core`. |
 | [`.github/`](.github/) | `play198x/.github` | Org profile (`profile/README.md`) and shared community-health files. |
 | [`docs/`](docs/) | `play198x/docs` | Design notes; user docs in time. |
+| [`play198x.github.io/`](play198x.github.io/) | `play198x/play198x.github.io` | Public site — a landing page that **is** the player: drop a file on it and it plays in your browser. Designed in `docs/specs/2026-08-26-website-design.md`. |
 
 ## Working here
 
