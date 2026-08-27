@@ -1,10 +1,12 @@
 # Play198x — org container
 
+> Read [`PRINCIPLES.md`](.github/PRINCIPLES.md) first.
+
 This folder is the org container for the **`play198x` GitHub organisation**. It is not a Git repo; each child folder is an independent repo with its own remote. Commit inside the repo that owns the file.
 
 Play198x is the 198x family's **retro media player/viewer** — it plays and
 previews vintage media (audio, images, animation) without booting a whole
-machine. See the umbrella context at [`../CLAUDE.md`](../CLAUDE.md) and the
+machine. See the umbrella context at [`../AGENTS.md`](../AGENTS.md) and the
 binding decision at [`../decisions/play198x-media-player.md`](../decisions/play198x-media-player.md).
 
 **Status: building.** The data-driven core (images + tracker music) is designed
