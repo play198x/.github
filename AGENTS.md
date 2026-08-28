@@ -1,6 +1,6 @@
 # Play198x — org container
 
-> Read [`PRINCIPLES.md`](.github/PRINCIPLES.md) first.
+> Read [`PRINCIPLES.md`](.github/PRINCIPLES.md) first. [`MANIFESTO.md`](.github/MANIFESTO.md) is why the project exists.
 
 This folder is the org container for the **`play198x` GitHub organisation**. It is not a Git repo; each child folder is an independent repo with its own remote. Commit inside the repo that owns the file.
 
