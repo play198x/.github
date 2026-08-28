@@ -30,13 +30,13 @@ Because it still has something to teach us.
 
 ## Curiosity
 
-This project is not really about retro computing.
+This project is not about retro computing.
 
 It is not even about computers.
 
 It is about curiosity.
 
-Computers simply happen to be one of the richest places in human history for asking "why?"
+Computers are one of the richest places in human history for asking "why?"
 
 Every machine, every game, every operating system, every compiler, every CPU, every language, every circuit, every abstraction exists because somebody faced a problem and tried to solve it.
 
@@ -74,7 +74,7 @@ Curiosity is not a distraction from learning.
 
 It is learning.
 
-The purpose of education is not simply to supply answers.
+The purpose of education is not to supply answers.
 
 It is to help people ask better questions.
 
@@ -96,7 +96,7 @@ Transistors lead to semiconductor manufacturing.
 
 Semiconductor manufacturing leads to physics.
 
-The same thread might instead run through game design, music, graphics, mathematics, psychology, economics or history.
+A thread might instead run through game design, music, graphics, mathematics, psychology, economics or history.
 
 Nothing exists in isolation.
 
@@ -112,7 +112,7 @@ Curiosity suggests the route; it does not decide what the project takes on. Whic
 
 198x is interested in constructive understanding.
 
-Not simply knowing that something exists.
+Not knowing that something exists.
 
 Understanding it well enough to explain it.
 
@@ -209,13 +209,13 @@ We preserve:
 - conversations
 - context
 
-Understanding is the thing we are really preserving.
+Understanding is what we are preserving.
 
 ---
 
 ## Knowledge is connected
 
-198x does not merely collect facts.
+198x does not only collect facts.
 
 It collects relationships.
 
@@ -249,7 +249,7 @@ Understanding serves creation.
 
 Each is necessary. None is sufficient alone.
 
-We do not study historical systems in order to recreate them forever.
+We do not study historical systems to recreate them forever.
 
 We study them to understand the problems they solved.
 

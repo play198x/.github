@@ -87,11 +87,11 @@ A creation informed by what the other three activities produced.
 
 Every interesting problem can be examined through more than one lens.
 
-A platform game is not simply a programming exercise.
+A platform game is not only a programming exercise.
 
 It is also an exercise in computer science, software engineering, computer engineering, mathematics, game design, graphics, audio, and the history of the people who solved it first.
 
-Each lens asks a different question. *How do we make it work?* is not the same question as *what is the hardware actually doing?*, *why does this algorithm work?*, *is this enjoyable and fair?*, or *who solved this before us, and why that way?*
+Each lens asks a different question. *How do we make it work?* is not the same question as *what is the hardware doing?*, *why does this algorithm work?*, *is this enjoyable and fair?*, or *who solved this before us, and why that way?*
 
 The lenses are the atlas's threads, each named by the question it pursues. They are enumerated once, in the atlas, so that this document and that one cannot drift apart into two differently-cut lists of the same thing.
 
@@ -172,7 +172,7 @@ It waits for evidence, or for someone else to pull on it.
 
 Pages should assemble information from shared knowledge rather than duplicate it.
 
-The atlas is this model populated: it is where the entities, claims, evidence and relationships below actually live.
+The atlas is this model populated: it is where the entities, claims, evidence and relationships below live.
 
 ```
 Entities
