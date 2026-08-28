@@ -1,30 +1,33 @@
 # Contributing to Play198x
 
-Thanks for taking a look. Play198x is the 198x family's development workbench —
-an IDE that drives Asm198x and Emu198x. It is **deferred**: gated on those two
-projects maturing first, so there is no build to contribute to yet.
+Thanks for taking a look. Play198x is the 198x family's retro media
+player/viewer — it plays and previews vintage media without booting a whole
+machine.
 
 This file applies to every repo in the [play198x](https://github.com/play198x) org.
 
-## Right now
+## Where it is
 
-The most useful contribution is **discussion** — how the workbench should feel,
-what the edit → assemble → run → debug loop should do, which editor or runtime to
-build on. Open an issue or start a discussion.
+The data-driven core is building. It probes a file and decodes ZX Spectrum
+SCREEN$, C64 Koala and OCP Art Studio, and Amiga IFF/ILBM to RGBA, and plays
+ProTracker modules. Nothing is published to crates.io yet. Chip-backed audio
+(SID, AY) is deliberately out of the first slice: it needs Emu198x chip crates
+that are not yet published.
 
-## When the build starts
+Read the specs in the `docs` repo before proposing scope or architecture changes.
 
-The stack isn't chosen yet (a VS Code extension and a TUI are both on the table).
-Once it is, this file gains the concrete build/check commands the other family
-repos have. Two principles are already fixed:
+## Two rules that shape the design
 
-- **Thin front-end, not a new backend.** Play198x consumes Emu198x's
-  scriptable / MCP surface and Asm198x's CLI; it does not reimplement assembly or
-  emulation.
-- **Agent-native parity.** Anything a human can do in Play198x, an agent can do
-  through the same tool surface. A human-only path is a bug.
+- **Render media, don't execute programs.** Emu198x boots a machine; Play198x
+  renders a tune, image or animation that is not a bootable program. Work that
+  needs a machine booted belongs in Emu198x.
+- **Thin consumer, never a reimplementation.** Play198x reuses Emu198x's chip and
+  CPU emulation for formats that need a player, and decodes pure-data formats
+  directly. It does not reimplement chip emulation.
 
-## Commits and PRs
+## Before opening a pull request
+
+Run `cargo test`, `cargo clippy` and `cargo fmt --check`.
 
 Clear, imperative commit subjects that describe the effect; explain the *why* in
 the body. One concern per PR. Conventional-commit prefixes (`feat:`, `fix:`) are
