@@ -12,10 +12,17 @@ binding decision at [`../decisions/play198x-media-player.md`](../decisions/play1
 **Status: building.** The data-driven core (images + tracker music) is designed
 in `docs/specs/`, planned in `docs/plans/`, and implemented in `play198x/` — it
 probes a file, decodes ZX Spectrum SCREEN$, C64 Koala and Art Studio and Amiga
-ILBM to RGBA, and plays a ProTracker module. Not yet published to crates.io.
-Read those specs before proposing scope or architecture changes. SID/AY are deliberately out of
-the first slice — they need Emu198x's chip crates, which are `publish = false`
-(emu198x/emu198x#1214).
+ILBM to RGBA, and plays a ProTracker module. `play198x-core` is published on
+crates.io and `@play198x/web` on npm. Read those specs before proposing scope
+or architecture changes.
+
+ZX Spectrum `.ay` tunes play as well, behind `play198x-core`'s optional `ay`
+feature: the tune's own Z80 code runs against Emu198x's published CPU and AY
+crates, on a host Play198x supplies, and **no ROM is shipped or required**.
+The feature is off by default, so a consumer decoding a SCREEN$ acquires no
+Z80. The web shell does not expose it yet — four more crates enter the `.wasm`
+the page fetches, and that cost wants measuring first. SID is the next slice;
+both are designed in `docs/specs/2026-08-28-code-driven-audio.md`.
 
 ## Repos in this org
 
