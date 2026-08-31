@@ -16,13 +16,15 @@ ILBM to RGBA, and plays a ProTracker module. `play198x-core` is published on
 crates.io and `@play198x/web` on npm. Read those specs before proposing scope
 or architecture changes.
 
-ZX Spectrum `.ay` tunes play as well, behind `play198x-core`'s optional `ay`
-feature: the tune's own Z80 code runs against Emu198x's published CPU and AY
-crates, on a host Play198x supplies, and **no ROM is shipped or required**.
-The feature is off by default, so a consumer decoding a SCREEN$ acquires no
-Z80. The web shell does not expose it yet — four more crates enter the `.wasm`
-the page fetches, and that cost wants measuring first. SID is the next slice;
-both are designed in `docs/specs/2026-08-28-code-driven-audio.md`.
+ZX Spectrum `.ay` and ROM-free callable PSID tunes play as well, behind
+`play198x-core`'s separate optional `ay` and `sid` features. The tunes' own Z80
+or 6502 code runs against Emu198x's published CPU and sound-chip crates on
+hosts Play198x supplies, and **no ROM is shipped or required**. Both features
+are off by default, so an image-only consumer acquires neither CPU. The web
+shell exposes both. RSID and zero-play-address PSID belong to Emu198x because
+they require a continuously scheduled C64 machine; ROM-dependent and multi-SID
+tunes are identified and explicitly declined. The design and measurements are
+in `docs/specs/2026-08-28-code-driven-audio.md` and `play198x/decisions/`.
 
 ## Repos in this org
 
